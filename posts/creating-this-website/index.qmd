@@ -1,0 +1,103 @@
+---
+title: "How I Created This Website"
+author: "Miffy B. Pluis"
+date: "2026-02-17"
+categories: [quarto, website, tutorial]
+description: "A step-by-step guide to building an academic website with Quarto and GitHub Pages"
+---
+
+## Introduction
+
+Welcome to my first blog post! In this article, I'll walk you through how I created this website using Quarto, a powerful open-source scientific and technical publishing system.
+
+## Why Quarto?
+
+As an academic researcher, I needed a platform that could:
+
+- Display my CV in a clean, professional format
+- Support a blog for sharing research updates and insights
+- Be easy to maintain and update
+- Support mathematical notation and code (for future posts)
+- Deploy automatically without manual intervention
+
+Quarto checks all these boxes and more!
+
+## The Setup Process
+
+### 1. Project Structure
+
+I organized my website with the following structure:
+
+```
+.
+├── _quarto.yml          # Main configuration file
+├── index.qmd            # Homepage with my CV
+├── blog.qmd             # Blog listing page
+├── posts/               # Directory for blog posts
+│   └── creating-this-website/
+│       └── index.qmd    # This post!
+└── .github/
+    └── workflows/
+        └── publish.yml  # GitHub Actions deployment
+```
+
+### 2. Configuration
+
+The `_quarto.yml` file is the heart of the website. It defines:
+
+- The project type (website)
+- Navigation structure (navbar with Home and Blog)
+- HTML theme and styling options
+- Output directory for the rendered site
+
+### 3. Blog Functionality
+
+Quarto's built-in listing feature makes blogging incredibly simple. The `blog.qmd` file uses the `listing` option to automatically display all posts from the `posts/` directory, sorted by date.
+
+Each blog post is a Quarto document (`.qmd` file) with YAML metadata including:
+
+- Title
+- Author
+- Date
+- Categories
+- Description
+
+### 4. Automatic Deployment
+
+The real magic happens with GitHub Actions. Every time I push changes to the repository, GitHub automatically:
+
+1. Checks out the code
+2. Sets up Quarto
+3. Renders the website
+4. Deploys it to GitHub Pages
+
+This means I can focus on writing content, and the deployment happens automatically!
+
+## The Result
+
+The end result is a clean, professional website that combines my academic CV with a blogging platform. The site is:
+
+- **Fast**: Static HTML loads quickly
+- **Responsive**: Works on all devices
+- **Easy to update**: Just edit markdown files and push
+- **Professional**: Clean academic styling
+- **Extensible**: Easy to add new pages or features
+
+## Next Steps
+
+In future blog posts, I plan to write about:
+
+- My research on burrow architecture
+- Findings from our interspecies friendship studies
+- Tips for academic writing and publishing
+- Conference experiences and travel
+
+## Conclusion
+
+Creating an academic website doesn't have to be complicated. With Quarto and GitHub Pages, you can have a professional online presence up and running in under an hour. The combination of simplicity, power, and automatic deployment makes this an ideal solution for academics who want to focus on research and writing rather than web development.
+
+If you're interested in creating your own Quarto website, check out the [official Quarto documentation](https://quarto.org/docs/websites/).
+
+---
+
+*Happy publishing! 🐰*

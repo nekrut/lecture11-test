@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Miffy B. Pluis"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Blog"
+        href: blog.qmd
+    right:
+      - icon: github
+        href: https://github.com/
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3

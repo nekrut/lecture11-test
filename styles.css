@@ -1,0 +1,20 @@
+/* Custom styles for the website */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* CV-specific styling */
+.quarto-title-block {
+  margin-bottom: 2em;
+}
+
+/* Blog post styling */
+.quarto-listing {
+  margin-top: 2em;
+}
